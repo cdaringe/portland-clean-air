@@ -1,9 +1,10 @@
 {
+  "name": "portland-clean-air",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "prepare": "husky install"
+    "start": "next dev",
+    "prepare": "husky install",
+    "format": "prettier --write '**/*.{ts,tsx,json,md,js,cjs,css,yml}'"
   },
   "devDependencies": {
     "husky": "^6.0.0",

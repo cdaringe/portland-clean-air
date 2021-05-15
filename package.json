@@ -1,7 +1,7 @@
 {
   "name": "portland-clean-air",
   "scripts": {
-    "build": "next build",
+    "build": "NODE_ENV=production next build",
     "start": "next dev",
     "prepare": "husky install",
     "format": "prettier --write '**/*.{ts,tsx,json,md,js,cjs,css,yml}'",

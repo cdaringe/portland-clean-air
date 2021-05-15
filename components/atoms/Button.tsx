@@ -10,16 +10,18 @@ interface Props {
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<Props> = ({
+export const Button: React.FC<Props & React.HTMLProps<HTMLButtonElement>> = ({
   primary = true,
   size = "medium",
   label,
   children,
-  ...props
+  className,
+  type,
+  ...rest
 }) => {
   return (
     <button
-      type="button"
+      type={(type as "button") || "button"}
       className={[
         "p-2",
         "br-2",
@@ -29,10 +31,11 @@ export const Button: React.FC<Props> = ({
         primary ? "hover:bg-blue-600" : "hover:bg-gray-100",
         primary ? "border-none" : "border-solid",
         primary ? false : "border border-black",
+        className,
       ]
         .filter(Boolean)
         .join(" ")}
-      {...props}
+      {...rest}
     >
       {children}
     </button>

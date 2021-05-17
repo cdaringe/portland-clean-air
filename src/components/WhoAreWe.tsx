@@ -46,7 +46,7 @@ const members: Member[] = [
 export default function WhoAreWe() {
   return (
     <>
-      <h2 className="text-2xl mt-4">Who are we?</h2>
+      <h2 className="text-xl mt-4">Who are we?</h2>
       <div className="flex flex-wrap justify-center ">
         {members.map((member, i) => (
           <MemberCard key={i} {...member} />

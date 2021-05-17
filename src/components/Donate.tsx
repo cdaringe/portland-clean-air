@@ -12,7 +12,7 @@ const Donate: React.FC<React.HTMLProps<HTMLFormElement>> = function Donate({
       action="https://www.paypal.com/cgi-bin/webscr"
       method="post"
       target="_top"
-      className={`w-full md:max-w-md py-4 px-4 md:shadow-lg md:rounded-lg ${className}`}
+      className={`w-full md:max-w-sm py-4 px-4 md:shadow-lg md:rounded-lg ${className}`}
       {...props}
     >
       <div className="hidden md:flex justify-center -mt-16 mb-1">
@@ -22,8 +22,7 @@ const Donate: React.FC<React.HTMLProps<HTMLFormElement>> = function Donate({
         />
       </div>
       <Button
-        className="w-full text-center shadow-white font-bold"
-        primary
+        className="w-full text-center shadow-white font-medium text-white bg-green-400 hover:bg-green-600"
         type="submit"
       >
         Donate now!

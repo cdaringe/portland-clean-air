@@ -11,7 +11,7 @@ interface Props {
  * Primary UI component for user interaction
  */
 export const Button: React.FC<Props & React.HTMLProps<HTMLButtonElement>> = ({
-  primary = true,
+  primary = false,
   size = "medium",
   label,
   children,

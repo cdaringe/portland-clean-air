@@ -18,8 +18,8 @@ function App({
 }) {
   return (
     <>
-      <Banner />
       <Navbar />
+      <Banner />
       {/* <div id="sub_banner" className={`${TOP_LEVEL_PADDING} py-4 bg-gray-100`}>
         <div id="banner_guts" className={`${TOP_LEVEL_WIDTH}`}>
           <h1 className="text-1xl md:text-5xl font-black">
@@ -33,7 +33,7 @@ function App({
           </span>
         </div>
       </div> */}
-      <Donate className="sm:text-center md:text-left sm: md:absolute right-2 top-0" />
+      <Donate className="right-2 top-0 md:text-left md:relative md:float-right md:-top-24" />
       <Component contentClx={CONTENT_SIZING_CLX} {...pageProps} />
     </>
   );

@@ -26,15 +26,17 @@ export default function Navbar() {
       </div>
       <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
         <div className="text-sm md:flex md:flex-grow md:justify-end">
-          {["About", "Data", "Social"].map((sectionName) => (
-            <Link
-              key={sectionName}
-              href={`#${sectionName}`}
-              className="block mt-4 md:inline-block md:mt-0 hover:text-white mr-4"
-            >
-              {sectionName}
-            </Link>
-          ))}
+          {["Is My Air Clean?", "Data", "Get involved", "About"].map(
+            (sectionName) => (
+              <Link
+                key={sectionName}
+                href={`#${sectionName}`}
+                className="block mt-4 md:inline-block md:mt-0 hover:text-white mr-4"
+              >
+                {sectionName}
+              </Link>
+            )
+          )}
         </div>
       </div>
     </nav>

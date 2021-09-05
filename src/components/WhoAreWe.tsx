@@ -17,7 +17,8 @@ const members: Member[] = [
     roles: ["Board Chair", "Databases", "Media Contact"],
     email: "seth@portlandcleanair.org",
     phone: "503-953-3943",
-    avatar: "http://swoolley.org/files/kramseth2.jpg",
+    // kramseth2 is impacting site speed, too large of image
+    // avatar: "http://swoolley.org/files/kramseth2.jpg",
   },
   {
     name: "Don Berg",

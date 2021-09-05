@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "./atoms/Button";
 
-// <input class="donate dright" type="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate" value="Donate to"><div class="smallprint"><br>501(c)(3) Cascadia Action</div></div>
-
 const Donate: React.FC<React.HTMLProps<HTMLFormElement>> = function Donate({
   className = "",
   ...props
@@ -12,7 +10,7 @@ const Donate: React.FC<React.HTMLProps<HTMLFormElement>> = function Donate({
       action="https://www.paypal.com/cgi-bin/webscr"
       method="post"
       target="_top"
-      className={`w-full md:max-w-sm py-4 px-4 md:shadow-lg md:rounded-lg ${className}`}
+      className={`w-full md:max-w-sm py-4 px-4 ${className}`}
       {...props}
     >
       <div className="hidden md:flex justify-center -mt-16 mb-1">
@@ -25,7 +23,8 @@ const Donate: React.FC<React.HTMLProps<HTMLFormElement>> = function Donate({
         className="w-full text-center shadow-white font-medium text-white bg-green-400 hover:bg-green-600"
         type="submit"
       >
-        Donate now!
+        <p>Donate now!</p>
+        <p className="text-xs">Cascadia Action 501(c)(3)</p>
       </Button>
       <input type="hidden" name="cmd" value="_s-xclick" />
       <input type="hidden" name="hosted_button_id" value="PFZ9D8YUKY6AW" />

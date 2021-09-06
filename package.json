@@ -1,13 +1,14 @@
 {
   "name": "portland-clean-air",
   "scripts": {
+    "build-storybook": "build-storybook",
     "build": "NODE_ENV=production next build",
     "dev": "next dev",
-    "start": "next start",
-    "prepare": "husky install",
+    "export": "next export",
     "format": "prettier --write '**/*.{ts,tsx,json,md,js,cjs,css,yml}'",
+    "prepare": "husky install",
+    "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "test": "echo best-test"
   },
   "devDependencies": {

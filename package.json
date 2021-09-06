@@ -7,7 +7,8 @@
     "prepare": "husky install",
     "format": "prettier --write '**/*.{ts,tsx,json,md,js,cjs,css,yml}'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "echo best-test"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
